@@ -1,0 +1,107 @@
+@import "config.less";
+
+/*function.css*/
+.fn-clear {
+	clear: both;
+}
+
+.fn-fl {
+	float: left;
+}
+
+.fn-fr {
+	float: right;
+}
+
+/* for text*/
+.fn-t-left {
+	text-align : left;	
+}
+
+.fn-t-right {
+	text-align : right;	
+}
+
+.fn-t-center {
+	text-align : center;	
+}
+
+.fn-t-muted {
+    color: @text-color-muted;	
+}
+
+.fn-t-warning {
+    color : @text-color-warning;
+}
+
+.fn-t-error {
+    color : @text-color-error;
+}
+
+.fn-t-info {
+	color: @text-color-info	
+}
+
+.fn-t-success {
+	color: @text-color-success;
+}
+
+.fn-t-mini {
+	font-size : @text-size-mini ;
+}
+
+.fn-t-small {
+    font-size: @text-size-small;
+}
+
+.fn-t-primary{
+    font-size : @text-size-primary;
+}
+
+.fn-t-large {
+	font-size : @text-size-large;
+}
+
+.fn-t-xlarge {
+	font-size : @text-size-xlarge;
+}
+
+.fn-t-normal {
+    font-weight: normal;
+}
+
+.fn-t-bold {
+	font-weight : bold;	
+}
+
+.fn-br {
+	.border-radius(@border-radius-default);
+}
+
+.fn-br-tl{
+	.border-radius(@border-radius-default , 0px , 0px , 0px);
+}
+
+.fn-br-tr{
+	.border-radius(@border-radius-default , 5px , 0px , 0px);
+}
+
+.fn-br-bl{
+	.border-radius(0px , 0px , @border-radius-default , 0px);
+}
+
+.fn-br-br{
+	.border-radius(0px , 0px , 0px , @border-radius-default);
+}
+
+.fn-box-b {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fn-box-c {
+	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}

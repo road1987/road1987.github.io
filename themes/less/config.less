@@ -1,0 +1,74 @@
+@border-radius-default: 5px;
+
+/* function set */
+.border-radius(@radius-tl:5px , @radius-tr:5px  , @radius-bl:5px  , @radius-br:5px ){
+    -moz-border-radius: @radius-tl @radius-tr   @radius-bl @radius-br;
+    -khtml-border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
+    -webkit-border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
+    -webkit-border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
+    border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
+};
+
+
+.gradient-line-top-bottom(@start-color : #EEEEEE , @end-color : #AAAAAA ){
+	background: -moz-linear-gradient(top, @start-color 0%, @end-color 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start-color), color-stop(100%,@end-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, @start-color 0%,@end-color 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, @start-color 0%,@end-color 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, @start-color 0%,@end-color 100%); /* IE10+ */
+	background: linear-gradient(top, @start-color 0%,@end-color 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@start-color', endColorstr='@end-color',GradientType=0 ); /* IE6-9 */
+};
+
+.box-shadow( @offset-h : 0px , @offset-v : 0px , @blur : 5px, @spread-distance : 0px , @shadow-color : "", @inset-outset : ""   ){
+  -webkit-box-shadow:  @inset-outset @offset-h @offset-v @blur @spread-distance @shadow-color;
+     -moz-box-shadow: @inset-outset @offset-h @offset-v @blur @spread-distance @shadow-color;
+          box-shadow: @inset-outset @offset-h @offset-v @blur @spread-distance @shadow-color;
+      	  1-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='@end-color')"; /* For IE 8 */
+              1filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='@end-color'); /* For IE 5.5 - 7 */
+};
+
+.transition(@config){
+    -moz-transition: @config;
+    -webkit-transition: @config;
+    -o-transition: @config;
+    transition: @config;
+}
+
+
+
+/* typography */
+@global-background : #FFFFFF;
+@global-color : #333333;
+@global-font-family : "微软雅黑", "Microsoft YaHei", "宋体", verdana;
+@global-font-size : 14px;
+@global-line-height : 22px;
+@h6-font-size : 12px;
+@h5-font-size : 14px;
+@h4-font-size : 16px;
+@h3-font-size : 18px;
+@h2-font-size : 24px;
+@h1-font-size : 36px;
+
+
+/* function */
+@text-color-muted :  #999999;	
+@text-color-warning : #C09853;
+@text-color-error : #B94A48;
+@text-color-info : #3A87AD;	
+@text-color-success: #468847;
+
+
+@text-size-mini : 10.5px;
+@text-size-small : 12px;
+@text-size-primary : 14px;
+@text-size-large : 18px;
+@text-size-xlarge : 24px;
+
+
+
+/* layout-grid*/
+@grid-width-based : 960px; 
+@gutter : 20px;
+
+
